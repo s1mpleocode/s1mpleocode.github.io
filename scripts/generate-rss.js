@@ -6,16 +6,10 @@ import { dirname } from 'path';
 import matter from 'gray-matter';
 import { Feed } from 'feed';
 import { marked } from 'marked';
+import { config } from './config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
-const BASE_URL = 'https://xxx.com';
-const AUTHOR = {
-  name: "Your Name",
-  email: "your.email@example.com",
-  link: BASE_URL
-};
 
 async function scanMarkdownFiles(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
@@ -36,7 +30,7 @@ async function scanMarkdownFiles(dir) {
       files.push({
         ...data,
         content: markdown,
-        url: `${BASE_URL}/${urlPath}`,
+        url: `${config.site.baseUrl}/${urlPath}`,
         date: new Date(data.date),
         updated: new Date(data.updated)
       });
@@ -58,22 +52,26 @@ async function generateRSSFeed() {
 
     // Create feed
     const feed = new Feed({
-      title: "Your Blog",
-      description: "Your Blog Description",
-      id: BASE_URL,
-      link: BASE_URL,
-      language: "en",
-      image: `${BASE_URL}/favicon.png`,
-      favicon: `${BASE_URL}/favicon.ico`,
-      copyright: `All rights reserved ${new Date().getFullYear()}, Your Name`,
+      title: config.site.rss.title,
+      description: config.site.rss.description,
+      id: config.site.baseUrl,
+      link: config.site.baseUrl,
+      language: "zh-CN",
+      image: `${config.site.baseUrl}/favicon.png`,
+      favicon: `${config.site.baseUrl}/favicon.ico`,
+      copyright: `All rights reserved ${new Date().getFullYear()}, ${config.author.name}`,
       updated: new Date(),
       generator: "Feed for Node.js",
       feedLinks: {
-        rss2: `${BASE_URL}/rss.xml`,
-        json: `${BASE_URL}/feed.json`,
-        atom: `${BASE_URL}/atom.xml`,
+        rss2: `${config.site.baseUrl}${config.site.rss.feedLinks.rss2}`,
+        json: `${config.site.baseUrl}${config.site.rss.feedLinks.json}`,
+        atom: `${config.site.baseUrl}${config.site.rss.feedLinks.atom}`,
       },
-      author: AUTHOR
+      author: {
+        name: config.author.name,
+        email: config.author.email,
+        link: config.site.baseUrl
+      }
     });
 
     // Add posts to feed
@@ -86,7 +84,11 @@ async function generateRSSFeed() {
         link: post.url,
         description: post.summary,
         content: htmlContent,
-        author: [AUTHOR],
+        author: [{
+          name: config.author.name,
+          email: config.author.email,
+          link: config.site.baseUrl
+        }],
         date: post.date,
         updated: post.updated,
       });

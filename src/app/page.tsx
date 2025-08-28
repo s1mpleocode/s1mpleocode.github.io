@@ -8,6 +8,13 @@ export default function Home() {
     .filter((blog: any) => blog.featured === true)
     .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
+  // 构建社交链接数组
+  const socialLinks = [
+    ...(config.social.github ? [{ name: "GitHub", href: config.social.github }] : []),
+    // 添加RSS订阅链接
+    { name: "RSS订阅", href: config.site.rss.feedLinks.rss2 }
+  ];
+
 
 
   return (
@@ -18,18 +25,23 @@ export default function Home() {
         <p className="text-md">{config.author.bio}</p>
         
         {/* 社交链接 - 仅当有链接时才显示 */}
-        {/* {socialLinks.length > 0 && (
-          <div className="flex space-x-2 text-gray-600">
+        {socialLinks.length > 0 && (
+          <div className="flex space-x-2 text-muted-foreground">
             {socialLinks.map((link, index) => (
               <div key={link.name} className="flex items-center">
                 {index > 0 && <span className="mx-1">·</span>}
-                <Link href={link.href} className="underline underline-offset-4">
+                <Link 
+                  href={link.href} 
+                  className="underline underline-offset-4 hover:text-foreground transition-colors"
+                  target={link.name === "RSS订阅" ? "_blank" : "_self"}
+                  rel={link.name === "RSS订阅" ? "noopener noreferrer" : undefined}
+                >
                   {link.name}
                 </Link>
               </div>
             ))}
           </div>
-        )} */}
+        )}
       </div>
 
       <div className="space-y-4">

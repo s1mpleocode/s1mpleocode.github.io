@@ -9,7 +9,7 @@ import matter from 'gray-matter';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const BASE_URL = 'https://xxx.com';
+import { config } from './config.js';
 
 function getPriority(path) {
   if (path === '/') return 1.0;
@@ -41,10 +41,10 @@ async function scanMarkdownFiles(dir) {
       const urlPath = join(relativePath, entry.name.replace('.md', '')).replace(/\\/g, '/');
       
       files.push({
-        url: urlPath,
+        url: `/${urlPath}`,
         lastModified: data.updated || new Date().toISOString(),
-        changeFrequency: getChangeFrequency(urlPath),
-        priority: getPriority(urlPath)
+        changeFrequency: getChangeFrequency(`/${urlPath}`),
+        priority: getPriority(`/${urlPath}`)
       });
     }
   }

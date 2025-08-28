@@ -1,157 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Your Blog</title>
-        <link>https://xxx.com</link>
-        <description>Your Blog Description</description>
-        <lastBuildDate>Sat, 05 Apr 2025 13:14:31 GMT</lastBuildDate>
+        <title>s1mplecode</title>
+        <link>https://s1mplecode.com</link>
+        <description>Thoughts on Full-stack development, AI</description>
+        <lastBuildDate>Thu, 28 Aug 2025 14:40:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
-        <language>en</language>
+        <language>zh-CN</language>
         <image>
-            <title>Your Blog</title>
-            <url>https://xxx.com/favicon.png</url>
-            <link>https://xxx.com</link>
+            <title>s1mplecode</title>
+            <url>https://s1mplecode.com/favicon.png</url>
+            <link>https://s1mplecode.com</link>
         </image>
-        <copyright>All rights reserved 2025, Your Name</copyright>
+        <copyright>All rights reserved 2025, Jago</copyright>
         <item>
-            <title><![CDATA[Markdown 基本用法]]></title>
-            <link>https://xxx.com/blog/hello-world</link>
-            <guid>https://xxx.com/blog/hello-world</guid>
-            <pubDate>Sat, 05 Apr 2025 12:10:00 GMT</pubDate>
-            <description><![CDATA[这篇文章包含markdown语法基本的内容。]]></description>
-            <content:encoded><![CDATA[<p>这篇文章包含markdown语法基本的内容。</p>
-<p>在markdown里可以使用 \ 对特殊符号进行转义。  </p>
-<h1>1. 标题</h1>
-<p><strong>语法</strong></p>
-<pre><code class="language-md"># This is an &lt;h1&gt; tag
-## This is an &lt;h2&gt; tag
-### This is an &lt;h3&gt; tag
-#### This is an &lt;h4&gt; tag
-</code></pre>
-<p><strong>实例</strong></p>
-<h1>This is an h1 tag</h1>
-<h2>This is an h2 tag</h2>
-<h3>This is an h3 tag</h3>
-<h4>This is an h4 tag</h4>
-<h1>2. 强调和斜体</h1>
-<p><strong>语法</strong></p>
-<pre><code class="language-md">*This text will be italic*
-_This will also be italic_
-
-**This text will be bold**
-__This will also be bold__
-</code></pre>
-<p><strong>实例</strong></p>
-<p><em>This text will be italic</em>
-<em>This will also be italic</em></p>
-<p><strong>This text will be bold</strong>
-<strong>This will also be bold</strong></p>
-<h1>3. 有序列表和无序列表</h1>
-<p><strong>语法</strong></p>
-<pre><code class="language-md">* Item 1
-* Item 2
-* Item 3
-
-1. Item 1
-2. Item 2
-3. Item 3
-</code></pre>
-<p><strong>实例</strong></p>
-<ul>
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-</ul>
-<ol>
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-</ol>
-<h1>4. 图片</h1>
-<p><strong>语法</strong></p>
-<pre><code>![img-name](img-url)
-</code></pre>
-<p><strong>实例</strong>
-<img src="https://storage.guangzhengli.com/images/wechat-official-account.png" alt="微信公众号"></p>
-<h1>5. 超链接</h1>
-<p><strong>语法</strong></p>
-<pre><code>[link-name](link-url)
-</code></pre>
-<p><strong>实例</strong></p>
-<p><a href="https://storage.guangzhengli.com/images/wechat-official-account.png">微信公众号链接</a></p>
-<h1>6. 引用</h1>
-<p><strong>语法</strong></p>
-<pre><code class="language-md">&gt; 引用本意是引用别人的话之类  
-</code></pre>
-<p><strong>实例</strong></p>
-<blockquote>
-<p>If you please draw me a sheep!<br>不想当将军的士兵, 不是好士兵.  </p>
-</blockquote>
-<h1>7. 单行代码</h1>
-<p><strong>语法</strong></p>
-<pre><code>`This is an inline code.`
-</code></pre>
-<p><strong>实例</strong></p>
-<p><code>同样的单行代码, 我经常用来显示特殊名词</code></p>
-<h1>8. 多行代码</h1>
-<p><strong>语法</strong></p>
-<pre><code class="language-md">​```js
-for (var i=0; i&lt;100; i++) {
-    console.log(&quot;hello world&quot; + i);
-}
-​```
-</code></pre>
-<p><strong>实例</strong></p>
-<pre><code class="language-js">for (var i=0; i&lt;100; i++) {
-    console.log(&quot;hello world&quot; + i);
-}
-</code></pre>
-<p>也可以通过缩进来显示代码, 下面是示例:  </p>
-<pre><code>console.loe(&quot;Hello_World&quot;);
-</code></pre>
-<h1>9. 表格</h1>
-<h2>Table</h2>
-<table>
-<thead>
-<tr>
-<th>Table Header 1</th>
-<th>Table Header 2</th>
-<th>Table Header 3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Division 1</td>
-<td>Division 2</td>
-<td>Division 3</td>
-</tr>
-<tr>
-<td>Division 1</td>
-<td>Division 2</td>
-<td>Division 3</td>
-</tr>
-<tr>
-<td>Division 1</td>
-<td>Division 2</td>
-<td>Division 3</td>
-</tr>
-</tbody></table>
-<h1>参考链接</h1>
-<ul>
-<li><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a>  </li>
-<li><a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">https://help.github.com/articles/basic-writing-and-formatting-syntax/</a></li>
-</ul>
+            <title><![CDATA[问题记录]]></title>
+            <link>https://s1mplecode.com/blog/issuerecord</link>
+            <guid>https://s1mplecode.com/blog/issuerecord</guid>
+            <pubDate>Wed, 27 Aug 2025 06:30:55 GMT</pubDate>
+            <description><![CDATA[日常问题记录]]></description>
+            <content:encoded><![CDATA[<h2>一、使用Slf4j并配置了logback.xml，控制台仍然不打印日志</h2>
+<p>idea环境变量(Environment Variables), 添加：<code>LOG_CONSOLE_ENABLED=true</code></p>
+<h2>二、Ignite执行Insert into语句报错：Failed to prepare update plan</h2>
+<p>表中没有primary key，或者ignite.xml没有配置keyFieldName，导致primary key不是表中的字段，是_key: <code>&lt;property name=&quot;keyFieldName&quot; value=&quot;batchId&quot;/&gt;</code></p>
 ]]></content:encoded>
-            <author>your.email@example.com (Your Name)</author>
+            <author>s1mplecode@yeah.net (Jago)</author>
         </item>
         <item>
-            <title><![CDATA[博客模板介绍]]></title>
-            <link>https://xxx.com/blog/intro</link>
-            <guid>https://xxx.com/blog/intro</guid>
-            <pubDate>Sat, 05 Apr 2025 12:10:00 GMT</pubDate>
+            <title><![CDATA[博客部署]]></title>
+            <link>https://s1mplecode.com/blog/blogdeploy</link>
+            <guid>https://s1mplecode.com/blog/blogdeploy</guid>
+            <pubDate>Wed, 27 Aug 2025 02:25:07 GMT</pubDate>
+            <content:encoded><![CDATA[<p>在这里写你的文章内容...</p>
+<h2>小标题</h2>
+<p>文章正文内容。</p>
+<h2>另一个小标题</h2>
+<p>更多内容...</p>
+<hr>
+<blockquote>
+<p>💡 <strong>提示</strong>: 记得更新文章的摘要和关键词以获得更好的 SEO 效果！</p>
+</blockquote>
+]]></content:encoded>
+            <author>s1mplecode@yeah.net (Jago)</author>
+        </item>
+        <item>
+            <title><![CDATA[s1mple头像]]></title>
+            <link>https://s1mplecode.com/blog/s1mple</link>
+            <guid>https://s1mplecode.com/blog/s1mple</guid>
+            <pubDate>Wed, 27 Aug 2025 02:22:42 GMT</pubDate>
+            <content:encoded><![CDATA[<p>在这里写你的文章内容...</p>
+<h2>小标题</h2>
+<p>文章正文内容。</p>
+<h2>另一个小标题</h2>
+<p>更多内容...</p>
+<hr>
+<blockquote>
+<p>💡 <strong>提示</strong>: 记得更新文章的摘要和关键词以获得更好的 SEO 效果！</p>
+</blockquote>
+]]></content:encoded>
+            <author>s1mplecode@yeah.net (Jago)</author>
+        </item>
+        <item>
+            <title><![CDATA[博客模板使用介绍]]></title>
+            <link>https://s1mplecode.com/blog/intro</link>
+            <guid>https://s1mplecode.com/blog/intro</guid>
+            <pubDate>Sat, 05 Apr 2025 13:10:00 GMT</pubDate>
             <description><![CDATA[这是一个 Nextjs 博客模板，本文会介绍这个模板的一些基本用法]]></description>
             <content:encoded><![CDATA[<p>这是一个 Nextjs 博客模板，本文会介绍这个模板的一些基本用法。</p>
-<p>这个博客模板并没有设计成一个开箱即用的配置型模板，需要用户自行在代码中找到对应的配置。</p>
 <h2>1. 如何编写博客</h2>
 <p>这个仓库的博客文件需要放在 <code>src/content/blog</code> 目录下，可以是 markdown 文件，也可以是 mdx 文件。</p>
 <p>有以下这些元数据需要用户自行根据需要进行配置：</p>
@@ -164,8 +80,163 @@ for (var i=0; i&lt;100; i++) {
 <li><code>summary</code>: 博客摘要</li>
 </ul>
 <h2>2. 博客配置</h2>
+<p>博客的所有配置都集中在 <code>src/lib/config.ts</code> 文件中，这样做的好处是：</p>
+<ol>
+<li>集中管理：所有配置都在一个文件中，方便维护和修改</li>
+<li>类型安全：使用 TypeScript 可以获得类型检查和自动补全</li>
+<li>复用性：避免重复的配置散落在各个文件中</li>
+<li>一致性：确保所有地方使用相同的配置值</li>
+</ol>
+<h3>2.1 站点基本配置</h3>
+<pre><code class="language-typescript">site: {
+  title: &quot;你的博客标题&quot;,
+  name: &quot;你的博客名称&quot;,
+  description: &quot;博客描述&quot;,
+  keywords: [&quot;关键词1&quot;, &quot;关键词2&quot;],
+  url: &quot;https://你的域名.com&quot;,
+  baseUrl: &quot;https://你的域名.com&quot;,
+  image: &quot;https://你的域名.com/og-image.png&quot;,
+  favicon: {
+    ico: &quot;/favicon.ico&quot;,
+    png: &quot;/favicon.png&quot;,
+    svg: &quot;/favicon.svg&quot;,
+    appleTouchIcon: &quot;/favicon.png&quot;,
+  },
+  manifest: &quot;/site.webmanifest&quot;,
+}
+</code></pre>
+<p>这些配置用于：</p>
+<ul>
+<li>网站的基本信息展示</li>
+<li>SEO 优化</li>
+<li>浏览器标签页图标</li>
+<li>社交媒体分享预览</li>
+</ul>
+<h3>2.2 作者信息配置</h3>
+<pre><code class="language-typescript">author: {
+  name: &quot;你的名字&quot;,
+  email: &quot;你的邮箱&quot;,
+  bio: &quot;个人简介&quot;,
+}
+</code></pre>
+<p>作者信息会用于：</p>
+<ul>
+<li>首页展示</li>
+<li>RSS 订阅源信息</li>
+<li>博客文章的作者信息</li>
+</ul>
+<h3>2.3 社交媒体配置</h3>
+<pre><code class="language-typescript">social: {
+  github: &quot;https://github.com/你的用户名&quot;,
+  x: &quot;https://x.com/你的用户名&quot;,
+  xiaohongshu: &quot;https://www.xiaohongshu.com/user/profile/你的ID&quot;,
+  wechat: &quot;你的微信二维码图片链接&quot;,
+  buyMeACoffee: &quot;https://www.buymeacoffee.com/你的用户名&quot;,
+}
+</code></pre>
+<p>这些链接会显示在：</p>
+<ul>
+<li>首页的社交媒体链接区域</li>
+<li>导航栏的社交媒体图标</li>
+</ul>
+<h3>2.4 评论系统配置</h3>
+<pre><code class="language-typescript">giscus: {
+  repo: &quot;你的GitHub仓库名&quot;,
+  repoId: &quot;仓库ID&quot;,
+  categoryId: &quot;分类ID&quot;,
+}
+</code></pre>
+<p>使用 Giscus 作为评论系统，需要：</p>
+<ol>
+<li>在 GitHub 上安装 Giscus 应用</li>
+<li>在你的仓库中启用 Discussions</li>
+<li>获取配置信息并填入这里</li>
+</ol>
+<h3>2.5 导航菜单配置</h3>
+<pre><code class="language-typescript">navigation: {
+  main: [
+    { 
+      title: &quot;文章&quot;, 
+      href: &quot;/blog&quot;,
+    },
+    // 可以添加更多导航项
+  ],
+}
+</code></pre>
+<p>这里配置网站的导航菜单，支持：</p>
+<ul>
+<li>普通链接</li>
+<li>带子菜单的下拉菜单</li>
+</ul>
+<h3>2.6 SEO 配置</h3>
+<pre><code class="language-typescript">seo: {
+  metadataBase: new URL(&quot;https://你的域名.com&quot;),
+  alternates: {
+    canonical: &#39;./&#39;,
+  },
+  openGraph: {
+    type: &quot;website&quot; as const,
+    locale: &quot;zh_CN&quot;,
+  },
+  twitter: {
+    card: &quot;summary_large_image&quot; as const,
+    creator: &quot;@你的推特用户名&quot;,
+  },
+}
+</code></pre>
+<p>这些配置用于：</p>
+<ul>
+<li>搜索引擎优化</li>
+<li>社交媒体分享卡片</li>
+<li>网站元数据</li>
+</ul>
+<h3>2.7 RSS 订阅配置</h3>
+<pre><code class="language-typescript">rss: {
+  title: &quot;你的博客标题&quot;,
+  description: &quot;博客描述&quot;,
+  feedLinks: {
+    rss2: &quot;/rss.xml&quot;,
+    json: &quot;/feed.json&quot;,
+    atom: &quot;/atom.xml&quot;,
+  },
+}
+</code></pre>
+<p>这些配置用于生成：</p>
+<ul>
+<li>RSS 2.0 订阅源</li>
+<li>JSON Feed</li>
+<li>Atom 订阅源</li>
+</ul>
+<h2>3. 如何修改配置</h2>
+<ol>
+<li>打开 <code>src/lib/config.ts</code> 文件</li>
+<li>根据你的需求修改相应的配置项</li>
+<li>保存文件后，Next.js 会自动重新构建并应用新的配置</li>
+</ol>
+<p>注意事项：</p>
+<ul>
+<li>确保所有 URL 都是有效的</li>
+<li>图片链接应该是可访问的</li>
+<li>社交媒体链接要填写完整的 URL</li>
+<li>配置修改后，建议检查网站的：<ul>
+<li>首页展示</li>
+<li>导航菜单</li>
+<li>SEO 信息</li>
+<li>社交媒体分享效果</li>
+<li>RSS 订阅源</li>
+</ul>
+</li>
+</ul>
+<h2>4. 如何生成 RSS 订阅源</h2>
+<p>修改 scripts/generate-rss.js 文件中的配置，然后运行：</p>
+<pre><code class="language-bash">npm run generate-rss
+</code></pre>
+<h2>5. 如何生成 Sitemap</h2>
+<p>修改 scripts/generate-sitemap.js 文件中的配置，然后运行：</p>
+<pre><code class="language-bash">npm run generate-sitemap
+</code></pre>
 ]]></content:encoded>
-            <author>your.email@example.com (Your Name)</author>
+            <author>s1mplecode@yeah.net (Jago)</author>
         </item>
     </channel>
 </rss>
