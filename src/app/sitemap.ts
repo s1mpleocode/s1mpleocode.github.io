@@ -4,13 +4,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
   {
     "url": "/",
-    lastModified: new Date("2025-08-28T14:40:24.975Z"),
+    lastModified: new Date("2025-08-28T14:52:41.654Z"),
     "changeFrequency": "daily",
     "priority": 1
   },
   {
     "url": "/blog",
-    lastModified: new Date("2025-08-28T14:40:24.976Z"),
+    lastModified: new Date("2025-08-28T14:52:41.655Z"),
     "changeFrequency": "daily",
     "priority": 0.9
   },

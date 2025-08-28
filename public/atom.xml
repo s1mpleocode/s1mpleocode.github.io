@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://s1mplecode.com</id>
-    <title>s1mplecode</title>
-    <updated>2025-08-28T14:40:24.748Z</updated>
+    <id>https://s1mpleo.com</id>
+    <title>s1mple</title>
+    <updated>2025-08-28T14:52:41.330Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
-        <name>Jago</name>
+        <name>s1mple</name>
         <email>s1mplecode@yeah.net</email>
-        <uri>https://s1mplecode.com</uri>
+        <uri>https://s1mpleo.com</uri>
     </author>
-    <link rel="alternate" href="https://s1mplecode.com"/>
-    <link rel="self" href="https://s1mplecode.com/atom.xml"/>
+    <link rel="alternate" href="https://s1mpleo.com"/>
+    <link rel="self" href="https://s1mpleo.com/atom.xml"/>
     <subtitle>Thoughts on Full-stack development, AI</subtitle>
-    <logo>https://s1mplecode.com/favicon.png</logo>
-    <icon>https://s1mplecode.com/favicon.ico</icon>
-    <rights>All rights reserved 2025, Jago</rights>
+    <logo>https://s1mpleo.com/favicon.png</logo>
+    <icon>https://s1mpleo.com/favicon.ico</icon>
+    <rights>All rights reserved 2025, s1mple</rights>
     <entry>
         <title type="html"><![CDATA[问题记录]]></title>
-        <id>https://s1mplecode.com/blog/issuerecord</id>
-        <link href="https://s1mplecode.com/blog/issuerecord"/>
+        <id>https://s1mpleo.com/blog/issuerecord</id>
+        <link href="https://s1mpleo.com/blog/issuerecord"/>
         <updated>2025-08-27T06:30:55.910Z</updated>
         <summary type="html"><![CDATA[日常问题记录]]></summary>
         <content type="html"><![CDATA[<h2>一、使用Slf4j并配置了logback.xml，控制台仍然不打印日志</h2>
@@ -27,15 +27,15 @@
 <p>表中没有primary key，或者ignite.xml没有配置keyFieldName，导致primary key不是表中的字段，是_key: <code>&lt;property name=&quot;keyFieldName&quot; value=&quot;batchId&quot;/&gt;</code></p>
 ]]></content>
         <author>
-            <name>Jago</name>
+            <name>s1mple</name>
             <email>s1mplecode@yeah.net</email>
-            <uri>https://s1mplecode.com</uri>
+            <uri>https://s1mpleo.com</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[博客部署]]></title>
-        <id>https://s1mplecode.com/blog/blogdeploy</id>
-        <link href="https://s1mplecode.com/blog/blogdeploy"/>
+        <id>https://s1mpleo.com/blog/blogdeploy</id>
+        <link href="https://s1mpleo.com/blog/blogdeploy"/>
         <updated>2025-08-27T02:25:07.337Z</updated>
         <content type="html"><![CDATA[<p>在这里写你的文章内容...</p>
 <h2>小标题</h2>
@@ -48,15 +48,15 @@
 </blockquote>
 ]]></content>
         <author>
-            <name>Jago</name>
+            <name>s1mple</name>
             <email>s1mplecode@yeah.net</email>
-            <uri>https://s1mplecode.com</uri>
+            <uri>https://s1mpleo.com</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[s1mple头像]]></title>
-        <id>https://s1mplecode.com/blog/s1mple</id>
-        <link href="https://s1mplecode.com/blog/s1mple"/>
+        <id>https://s1mpleo.com/blog/s1mple</id>
+        <link href="https://s1mpleo.com/blog/s1mple"/>
         <updated>2025-08-27T02:22:42.393Z</updated>
         <content type="html"><![CDATA[<p>在这里写你的文章内容...</p>
 <h2>小标题</h2>
@@ -69,15 +69,15 @@
 </blockquote>
 ]]></content>
         <author>
-            <name>Jago</name>
+            <name>s1mple</name>
             <email>s1mplecode@yeah.net</email>
-            <uri>https://s1mplecode.com</uri>
+            <uri>https://s1mpleo.com</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[博客模板使用介绍]]></title>
-        <id>https://s1mplecode.com/blog/intro</id>
-        <link href="https://s1mplecode.com/blog/intro"/>
+        <id>https://s1mpleo.com/blog/intro</id>
+        <link href="https://s1mpleo.com/blog/intro"/>
         <updated>2025-04-05T13:10:00.000Z</updated>
         <summary type="html"><![CDATA[这是一个 Nextjs 博客模板，本文会介绍这个模板的一些基本用法]]></summary>
         <content type="html"><![CDATA[<p>这是一个 Nextjs 博客模板，本文会介绍这个模板的一些基本用法。</p>
@@ -250,9 +250,9 @@
 </code></pre>
 ]]></content>
         <author>
-            <name>Jago</name>
+            <name>s1mple</name>
             <email>s1mplecode@yeah.net</email>
-            <uri>https://s1mplecode.com</uri>
+            <uri>https://s1mpleo.com</uri>
         </author>
     </entry>
 </feed>

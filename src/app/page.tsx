@@ -10,7 +10,6 @@ export default function Home() {
 
   // 构建社交链接数组
   const socialLinks = [
-    ...(config.social.github ? [{ name: "GitHub", href: config.social.github }] : []),
     // 添加RSS订阅链接
     { name: "RSS订阅", href: config.site.rss.feedLinks.rss2 }
   ];

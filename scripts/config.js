@@ -5,11 +5,11 @@ export const config = {
     name: "s1mplecode",
     description: "s1mple code",
     keywords: ["s1mple", "AI", "Full Stack Developer"],
-    url: "https://s1mplecode.com",
-    baseUrl: "https://s1mplecode.com",
-    image: "https://s1mplecode.com/og-image.png",
+    url: "https://s1mpleo.com",
+    baseUrl: "https://s1mpleo.com",
+    image: "https://s1mpleo.com/og-image.png",
     rss: {
-      title: "s1mplecode",
+      title: "s1mple",
       description: "Thoughts on Full-stack development, AI",
       feedLinks: {
         rss2: "/rss.xml",
@@ -19,7 +19,7 @@ export const config = {
     },
   },
   author: {
-    name: "Jago",
+    name: "s1mple",
     email: "s1mplecode@yeah.net",
     bio: "简单代码",
   },
