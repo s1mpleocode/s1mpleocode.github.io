@@ -42,9 +42,9 @@ export const config = {
     categoryId: "DIC_kwDOPlhHls4Cury0",
   },
   umami: {
-    websiteId: "bbecf4df-2cfc-445c-886d-f436e80f0bef",
-    src: "https://umami-fork-m4fxsl5ix-jagos-projects-b6c410b7.vercel.app/nextjs-blog",
-    dashboardUrl: "https://umami-fork-m4fxsl5ix-jagos-projects-b6c410b7.vercel.app/share/ASkJPLgNaSVLUZhx/www.s1mpleo.com",
+    websiteId: "326b1377-4bcd-4bc1-b1cc-4cbb09c0df0d",
+    src: "https://umami-fork-gs0pftyac-jagos-projects-b6c410b7.vercel.app/nextjsblog25242",
+    dashboardUrl: "https://umami-fork-gs0pftyac-jagos-projects-b6c410b7.vercel.app/share/tcsmSOIvmJNBvf9a/www.s1mpleo.com",
   },
   navigation: {
     main: [
