@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>s1mple</title>
+        <title>s1mple's blog</title>
         <link>https://s1mpleo.com</link>
         <description>Thoughts on Full-stack development, AI</description>
-        <lastBuildDate>Thu, 28 Aug 2025 14:52:41 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Aug 2025 14:59:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>zh-CN</language>
         <image>
-            <title>s1mple</title>
+            <title>s1mple's blog</title>
             <url>https://s1mpleo.com/favicon.png</url>
             <link>https://s1mpleo.com</link>
         </image>
-        <copyright>All rights reserved 2025, s1mple</copyright>
+        <copyright>All rights reserved 2025, Jago</copyright>
         <item>
             <title><![CDATA[问题记录]]></title>
             <link>https://s1mpleo.com/blog/issuerecord</link>
@@ -25,7 +25,7 @@
 <h2>二、Ignite执行Insert into语句报错：Failed to prepare update plan</h2>
 <p>表中没有primary key，或者ignite.xml没有配置keyFieldName，导致primary key不是表中的字段，是_key: <code>&lt;property name=&quot;keyFieldName&quot; value=&quot;batchId&quot;/&gt;</code></p>
 ]]></content:encoded>
-            <author>s1mplecode@yeah.net (s1mple)</author>
+            <author>s1mplecode@yeah.net (Jago)</author>
         </item>
         <item>
             <title><![CDATA[博客部署]]></title>
@@ -42,7 +42,7 @@
 <p>💡 <strong>提示</strong>: 记得更新文章的摘要和关键词以获得更好的 SEO 效果！</p>
 </blockquote>
 ]]></content:encoded>
-            <author>s1mplecode@yeah.net (s1mple)</author>
+            <author>s1mplecode@yeah.net (Jago)</author>
         </item>
         <item>
             <title><![CDATA[s1mple头像]]></title>
@@ -59,7 +59,7 @@
 <p>💡 <strong>提示</strong>: 记得更新文章的摘要和关键词以获得更好的 SEO 效果！</p>
 </blockquote>
 ]]></content:encoded>
-            <author>s1mplecode@yeah.net (s1mple)</author>
+            <author>s1mplecode@yeah.net (Jago)</author>
         </item>
         <item>
             <title><![CDATA[博客模板使用介绍]]></title>
@@ -236,7 +236,7 @@
 <pre><code class="language-bash">npm run generate-sitemap
 </code></pre>
 ]]></content:encoded>
-            <author>s1mplecode@yeah.net (s1mple)</author>
+            <author>s1mplecode@yeah.net (Jago)</author>
         </item>
     </channel>
 </rss>

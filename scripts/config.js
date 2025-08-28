@@ -9,7 +9,7 @@ export const config = {
     baseUrl: "https://s1mpleo.com",
     image: "https://s1mpleo.com/og-image.png",
     rss: {
-      title: "s1mple",
+      title: "s1mple's blog",
       description: "Thoughts on Full-stack development, AI",
       feedLinks: {
         rss2: "/rss.xml",
@@ -19,7 +19,7 @@ export const config = {
     },
   },
   author: {
-    name: "s1mple",
+    name: "Jago",
     email: "s1mplecode@yeah.net",
     bio: "简单代码",
   },

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://s1mpleo.com</id>
-    <title>s1mple</title>
-    <updated>2025-08-28T14:52:41.330Z</updated>
+    <title>s1mple's blog</title>
+    <updated>2025-08-28T14:59:39.974Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
-        <name>s1mple</name>
+        <name>Jago</name>
         <email>s1mplecode@yeah.net</email>
         <uri>https://s1mpleo.com</uri>
     </author>
@@ -14,7 +14,7 @@
     <subtitle>Thoughts on Full-stack development, AI</subtitle>
     <logo>https://s1mpleo.com/favicon.png</logo>
     <icon>https://s1mpleo.com/favicon.ico</icon>
-    <rights>All rights reserved 2025, s1mple</rights>
+    <rights>All rights reserved 2025, Jago</rights>
     <entry>
         <title type="html"><![CDATA[问题记录]]></title>
         <id>https://s1mpleo.com/blog/issuerecord</id>
@@ -27,7 +27,7 @@
 <p>表中没有primary key，或者ignite.xml没有配置keyFieldName，导致primary key不是表中的字段，是_key: <code>&lt;property name=&quot;keyFieldName&quot; value=&quot;batchId&quot;/&gt;</code></p>
 ]]></content>
         <author>
-            <name>s1mple</name>
+            <name>Jago</name>
             <email>s1mplecode@yeah.net</email>
             <uri>https://s1mpleo.com</uri>
         </author>
@@ -48,7 +48,7 @@
 </blockquote>
 ]]></content>
         <author>
-            <name>s1mple</name>
+            <name>Jago</name>
             <email>s1mplecode@yeah.net</email>
             <uri>https://s1mpleo.com</uri>
         </author>
@@ -69,7 +69,7 @@
 </blockquote>
 ]]></content>
         <author>
-            <name>s1mple</name>
+            <name>Jago</name>
             <email>s1mplecode@yeah.net</email>
             <uri>https://s1mpleo.com</uri>
         </author>
@@ -250,7 +250,7 @@
 </code></pre>
 ]]></content>
         <author>
-            <name>s1mple</name>
+            <name>Jago</name>
             <email>s1mplecode@yeah.net</email>
             <uri>https://s1mpleo.com</uri>
         </author>

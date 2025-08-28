@@ -1,12 +1,12 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "s1mple",
+    "title": "s1mple's blog",
     "home_page_url": "https://s1mpleo.com",
     "feed_url": "https://s1mpleo.com/feed.json",
     "description": "Thoughts on Full-stack development, AI",
     "icon": "https://s1mpleo.com/favicon.png",
     "author": {
-        "name": "s1mple",
+        "name": "Jago",
         "url": "https://s1mpleo.com"
     },
     "items": [
@@ -18,7 +18,7 @@
             "summary": "日常问题记录",
             "date_modified": "2025-08-27T06:30:55.910Z",
             "author": {
-                "name": "s1mple",
+                "name": "Jago",
                 "url": "https://s1mpleo.com"
             }
         },
@@ -29,7 +29,7 @@
             "title": "博客部署",
             "date_modified": "2025-08-27T02:25:07.337Z",
             "author": {
-                "name": "s1mple",
+                "name": "Jago",
                 "url": "https://s1mpleo.com"
             }
         },
@@ -40,7 +40,7 @@
             "title": "s1mple头像",
             "date_modified": "2025-08-27T02:22:42.393Z",
             "author": {
-                "name": "s1mple",
+                "name": "Jago",
                 "url": "https://s1mpleo.com"
             }
         },
@@ -52,7 +52,7 @@
             "summary": "这是一个 Nextjs 博客模板，本文会介绍这个模板的一些基本用法",
             "date_modified": "2025-04-05T13:10:00.000Z",
             "author": {
-                "name": "s1mple",
+                "name": "Jago",
                 "url": "https://s1mpleo.com"
             }
         }
