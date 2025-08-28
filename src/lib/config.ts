@@ -66,7 +66,7 @@ export const config = {
       },
       {
         title: "统计",
-        href: "https://umami-fork-m4fxsl5ix-jagos-projects-b6c410b7.vercel.app/share/ASkJPLgNaSVLUZhx/www.s1mpleo.com",
+        href: "https://umami-fork-gs0pftyac-jagos-projects-b6c410b7.vercel.app/share/tcsmSOIvmJNBvf9a/www.s1mpleo.com",
       },
     ],
   },
