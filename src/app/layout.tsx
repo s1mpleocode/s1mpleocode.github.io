@@ -59,6 +59,11 @@ export default function RootLayout({
         <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml" />
         <link rel="alternate" type="application/json" title="JSON" href="/feed.json" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <script
+          defer
+          src={config.umami.src}
+          data-website-id={config.umami.websiteId}
+        ></script>
       </head>
       <body className="min-w-md overflow-x-hidden bg-white dark:bg-[rgb(24,24,27)] text-gray-900 dark:text-[rgb(212,212,216)] transition-colors">
         <ThemeProvider

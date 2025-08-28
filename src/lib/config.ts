@@ -41,6 +41,11 @@ export const config = {
     repoId: "R_kgDOPlhHlg",
     categoryId: "DIC_kwDOPlhHls4Cury0",
   },
+  umami: {
+    websiteId: "bbecf4df-2cfc-445c-886d-f436e80f0bef",
+    src: "https://umami-fork-psi.vercel.app/nextjs-blog",
+    dashboardUrl: "https://umami-fork-psi.vercel.app/share/3gCRnJQdWYhc2aWP/s1mplecode.com",
+  },
   navigation: {
     main: [
       { 
@@ -59,10 +64,14 @@ export const config = {
         title: "留言板",
         href: "/guestbook",
       },
+      {
+        title: "统计",
+        href: "/statistics",
+      },
     ],
   },
   seo: {
-    metadataBase: new URL("https://s1mplecode.com"),
+    metadataBase: new URL("https://s1mpleo.com"),
     alternates: {
       canonical: './',
     },
