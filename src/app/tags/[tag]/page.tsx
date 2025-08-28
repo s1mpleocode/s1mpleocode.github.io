@@ -6,18 +6,19 @@ import { formatDate, getWordCount, getReadingTime } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
 interface TagPageProps {
-  params: {
+  params: Promise<{
     tag: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: TagPageProps): Promise<Metadata> {
-  const tag = decodeURIComponent(params.tag);
+  const { tag } = await params;
+  const decodedTag = decodeURIComponent(tag);
   
   return {
-    title: `标签: ${tag} | ${config.site.title}`,
-    description: `查看标签 "${tag}" 下的所有文章 | ${config.site.title}`,
-    keywords: `${config.site.title}, 标签, ${tag}, ${config.site.title} ${tag}`,
+    title: `标签: ${decodedTag} | ${config.site.title}`,
+    description: `查看标签 "${decodedTag}" 下的所有文章 | ${config.site.title}`,
+    keywords: `${config.site.title}, 标签, ${decodedTag}, ${config.site.title} ${decodedTag}`,
   };
 }
 
@@ -37,12 +38,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function TagPage({ params }: TagPageProps) {
-  const tag = decodeURIComponent(params.tag);
+export default async function TagPage({ params }: TagPageProps) {
+  const { tag } = await params;
+  const decodedTag = decodeURIComponent(tag);
   
   // 找到包含该标签的所有文章
   const taggedBlogs = allBlogs
-    .filter((blog) => blog.keywords && blog.keywords.includes(tag))
+    .filter((blog) => blog.keywords && blog.keywords.includes(decodedTag))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   if (taggedBlogs.length === 0) {
@@ -62,7 +64,7 @@ export default function TagPage({ params }: TagPageProps) {
         
         <h1 className="text-3xl font-bold flex items-center gap-2">
           <span className="text-gray-400">#</span>
-          {tag}
+          {decodedTag}
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
           共 {taggedBlogs.length} 篇文章
@@ -108,7 +110,7 @@ export default function TagPage({ params }: TagPageProps) {
                       <span
                         key={keyword}
                         className={`inline-flex items-center px-2 py-1 text-xs font-medium rounded-full ${
-                          keyword === tag
+                          keyword === decodedTag
                             ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-200'
                             : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200'
                         }`}
