@@ -37,9 +37,9 @@ export const config = {
     // buyMeACoffee: "https://www.buymeacoffee.com/xxx",
   },
   giscus: {
-    repo: "CodingYourAmbition/nextjs-blog",
-    repoId: "R_kgDOPkcDsQ",
-    categoryId: "DIC_kwDOPkcDsc4Cupye",
+    repo: "s1mpleocode/s1mpleocode.github.io",
+    repoId: "R_kgDOPlhHlg",
+    categoryId: "DIC_kwDOPlhHls4Cury0",
   },
   navigation: {
     main: [
