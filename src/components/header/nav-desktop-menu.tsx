@@ -39,11 +39,24 @@ export function NavDesktopMenu() {
                 </NavigationMenuContent>
               </>
             ) : (
-              <Link href={item.href ?? ""} title={item.title} legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {item.title}
-                </NavigationMenuLink>
-              </Link>
+              item.href?.startsWith('http') ? (
+                <a 
+                  href={item.href} 
+                  title={item.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    {item.title}
+                  </NavigationMenuLink>
+                </a>
+              ) : (
+                <Link href={item.href ?? ""} title={item.title} legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    {item.title}
+                  </NavigationMenuLink>
+                </Link>
+              )
             )}
           </NavigationMenuItem>
         ))}

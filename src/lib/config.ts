@@ -43,8 +43,8 @@ export const config = {
   },
   umami: {
     websiteId: "bbecf4df-2cfc-445c-886d-f436e80f0bef",
-    src: "https://umami-fork-psi.vercel.app/nextjs-blog",
-    dashboardUrl: "https://umami-fork-psi.vercel.app/share/3gCRnJQdWYhc2aWP/s1mplecode.com",
+    src: "https://umami-fork-m4fxsl5ix-jagos-projects-b6c410b7.vercel.app/nextjs-blog",
+    dashboardUrl: "https://umami-fork-m4fxsl5ix-jagos-projects-b6c410b7.vercel.app/share/ASkJPLgNaSVLUZhx/www.s1mpleo.com",
   },
   navigation: {
     main: [
@@ -66,7 +66,7 @@ export const config = {
       },
       {
         title: "统计",
-        href: "/statistics",
+        href: "https://umami-fork-m4fxsl5ix-jagos-projects-b6c410b7.vercel.app/share/ASkJPLgNaSVLUZhx/www.s1mpleo.com",
       },
     ],
   },

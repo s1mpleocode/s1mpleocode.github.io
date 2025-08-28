@@ -50,6 +50,8 @@ const MenuItemComponent: React.FC<{ item: MenuItem; depth?: number }> = ({ item,
     <a
       href={item.href}
       title={item.title}
+      target={item.href?.startsWith('http') ? "_blank" : undefined}
+      rel={item.href?.startsWith('http') ? "noopener noreferrer" : undefined}
       className={cn(
         "block py-2 text-lg font-medium transition-colors hover:text-primary",
         depth > 0 && "pl-4",
