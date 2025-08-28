@@ -65,7 +65,7 @@ export default function RootLayout({
           data-website-id={config.umami.websiteId}
         ></script>
       </head>
-      <body className="min-w-md overflow-x-hidden bg-white dark:bg-[rgb(24,24,27)] text-gray-900 dark:text-[rgb(212,212,216)] transition-colors">
+      <body className="min-w-md overflow-x-hidden bg-background text-foreground transition-colors antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

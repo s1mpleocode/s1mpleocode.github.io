@@ -4,6 +4,7 @@ import Link from "next/link";
 import { NavDesktopMenu } from "./nav-desktop-menu";
 import { NavMobileMenu } from "./nav-mobile-menu";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { QuickSearch } from "@/components/search/quick-search";
 import GithubIcon from "@/components/icons/github";
 import XiaohongshuIcon from "@/components/icons/xiaohongshu";
 import XIcon from "@/components/icons/x";
@@ -53,11 +54,12 @@ export function Header() {
         {/* Right side buttons */}
         <div className="flex items-center space-x-2 md:space-x-4 mr-4">
           {socialLinks.map((link) => (
-            <Link key={link.title} href={link.href} title={link.title} className="hover:text-gray-600 dark:hover:text-gray-200 transition-colors">
+            <Link key={link.title} href={link.href} title={link.title} className="hover:text-muted-foreground transition-colors">
               {link.icon}
             </Link>
           ))}
-          <div className="border-l border-gray-200 dark:border-gray-700 h-6 mx-2"></div>
+          <div className="border-l border-border h-6 mx-2"></div>
+          <QuickSearch />
           <ThemeToggle />
         </div>
       </motion.div>
