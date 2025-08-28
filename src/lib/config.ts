@@ -43,7 +43,7 @@ export const config = {
   },
   umami: {
     websiteId: "326b1377-4bcd-4bc1-b1cc-4cbb09c0df0d",
-    src: "https://umami-fork-gs0pftyac-jagos-projects-b6c410b7.vercel.app/nextjsblog25242",
+    src: "https://umami-fork-psi.vercel.app/nextjsblog25242",
     dashboardUrl: "https://umami-fork-gs0pftyac-jagos-projects-b6c410b7.vercel.app/share/tcsmSOIvmJNBvf9a/www.s1mpleo.com",
   },
   navigation: {
