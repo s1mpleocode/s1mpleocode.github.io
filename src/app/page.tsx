@@ -21,7 +21,15 @@ export default function Home() {
       {/* 个人介绍部分 */}
       <div className="mb-16 space-y-4">
         <h1 className="text-4xl font-bold">{config.site.title}</h1>
-        <p className="text-md">{config.author.bio}</p>
+        <div className="text-md" style={{gap: '15px', display: 'flex', flexDirection: 'column'}}>
+          {Array.isArray(config.author.bio) ? (
+            config.author.bio.map((line, index) => (
+              <p key={index}>{line}</p>
+            ))
+          ) : (
+            <p>{config.author.bio}</p>
+          )}
+        </div>
         
         {/* 社交链接 - 仅当有链接时才显示 */}
         {socialLinks.length > 0 && (
