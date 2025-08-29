@@ -19,8 +19,13 @@ export default function Home() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
       {/* 个人介绍部分 */}
-      <div className="mb-16 space-y-4">
+      <div className="mb-16 space-y-4 relative">
         <h1 className="text-4xl font-bold">{config.site.title}</h1>
+        <img 
+          src="/xiaohei.gif" 
+          alt="Avatar" 
+          className="w-32 h-32 rounded-full object-cover absolute top-0 right-0"
+        />
         <div className="text-md" style={{gap: '15px', display: 'flex', flexDirection: 'column'}}>
           {Array.isArray(config.author.bio) ? (
             config.author.bio.map((line, index) => (
