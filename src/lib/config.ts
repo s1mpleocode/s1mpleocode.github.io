@@ -6,7 +6,7 @@ export const config = {
     keywords: ["s1mple", "AI", "Full Stack Developer"],
     url: "https://s1mpleo.com",
     baseUrl: "https://s1mpleo.com",
-    image: "https://s1mpleo.com/og-image.png",
+    image: "https://s1mpleo.com/favicon.png",
     favicon: {
       ico: "/favicon.ico",
       png: "/favicon.png",
