@@ -27,7 +27,10 @@ export const config = {
   author: {
     name: "Jago",
     email: "s1mplecode@yeah.net", 
-    bio: "简单代码",
+    bio: [
+      "阅读与思考，真理与自由",
+      "一个还在重新学习，重塑思想的开发者"
+    ],
   },
   social: {
     github: "https://github.com/s1mpleocode",
